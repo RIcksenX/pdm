@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: none;
+    margin: 0;
+    padding: 0;
+}
+
+h5 {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+header{
+    width: 100vw;
+    height: auto;
+    background-color: blanchedalmond;
+}
+
+.header{
+    height: 5rem;
+    background-color:blanchedalmond;
+}
+
+.header a {
+    float: left;
+    display: inline-block;
+    text-align: center;
+    height: 3rem;
+    width: 7rem;
+}
+
+.header a:hover{
+    background-color: bisque;
+}
+
+.right-header {
+    float: right;
+}
+
+.right-header a:hover{
+    background-color: bisque;
+}
