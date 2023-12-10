@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -8,6 +10,11 @@ body {
     background-color: none;
     margin: 0;
     padding: 0;
+}
+
+iconify-icon {
+    font-size: xx-large;
+    margin-right: 1rem;
 }
 
 .this-page {
@@ -29,6 +36,12 @@ header *:not(div) {
     padding-top: 0.1rem;
     text-align: center;
     color: white;
+}
+
+header h1 {
+    font-family: "Poppins", sans-serif;
+    color: #FFD9D9;
+    opacity: 81%;
 }
 
 header{
@@ -96,6 +109,7 @@ header{
     border-radius: 5%;
     margin: 4rem 0;
     margin-top: 0;
+    position: relative;
 }
 
 .content .form {
@@ -193,35 +207,209 @@ header{
     
 }
 
-.hotel-pict {
+.upside-detail {
     display: flex;
+    height: 25rem;
 }
 
-.hotel-pict > img {
-    width: 35%;
-    height: 400px;
-    margin: 4px;
+.date-type {
+    width: 30%;
+    padding: 3rem 1.25rem;
+    /* background-color: #E56868; */
 }
 
-.hotel-pict > div {
-    height: 400px;
-    width: 21.67%;
-    display: flex;
-    flex-direction: column;
-    margin: 4px;
+.hotel-info {
+    width: 30%;
+    /* padding: 0.5rem 0; */
 }
 
-.hotel-pict > div img {
+.hotel-info > div {
+    margin: 3rem 0 0 2.5rem;
+}
+
+.hotel-info img {
+    width: 40%;
+}
+
+.hotel-info > div * {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.hotel-info > div textarea {
+    width: 70%;
+    height: 5rem;
+    vertical-align: top;
+    resize: none;
+    position: relative;
+}
+
+.hotel-info > div button {
+    position: relative;
+    height: 1.2rem;
+    background-color: chartreuse;
+    left: -2rem;
+    top: 4.1rem;
+    border: none;
+    display: none;
+}
+
+.hotel-info > div button:hover {
+    opacity: 70%;
+}
+
+.hotel-info > div button:active {
+    transform: translateY(1px);
+  }
+
+.hotel-info > div button i {
+    font-size: 15px;
+    color: #f1f1f1;
+}
+
+.hotel-preview {
+    width: 40%;
+    padding: 3rem;
+    /* background-color: #DBCAFF; */
+}
+
+.hotel-preview img {
     width: 100%;
-    height: 50%;
+    height: 100%;
+    border-radius: 0.3rem;
 }
 
-.hotel-pict > div img[alt='first'] {
-    margin-bottom: 4px;
+.date-type label{
+    display: block;
+    text-align: center;
 }
 
-.hotel-pict > div img[alt='second'] {
-    margin-top: 4px;
+.date-type input, select {
+    width: 100%;
+    border-radius: 2rem;
+    padding: 0.5rem 0.25rem;
+    font-size: medium;
+    outline: none;
+    margin-bottom: 1.5rem;
+}
+
+.date-type input {
+    outline: none;
+    text-align: center;
+    position: relative;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #00000000;
+    opacity: 1;
+    display: block;
+    background-repeat:  no-repeat;
+    width: 1rem;
+    height: 1rem;
+    border-width: thin
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+}
+
+input::-webkit-datetime-edit-fields-wrapper {
+    position: relative;
+}
+
+input::-webkit-datetime-edit {
+    position: relative;
+}
+
+.downside-detail {
+    display: flex;
+    border-radius: 5%;
+}
+
+.downside-detail > div {
+    width: 50%;
+}
+
+.downside-detail .invoice {
+    border-right: solid;
+}
+
+.payment-gateway h3 {
+    text-align: center;
+    /* width: 100%; */
+    border-bottom: solid;
+    padding-bottom: 0.3rem;
+}
+
+.downside-detail > div td {
+    width: 15%;
+    padding: 1rem 0 1rem 0.5rem;
+}
+
+.hotel-information {
+    display: flex;
+    width: 100%;;
+}
+
+.hotel-img {
+    width: 33.33%;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.hotel-adv {
+    width: 30%;
+    font-size: x-large;
+    padding-left: 3rem;
+}
+
+.hotel-adv ol {
+    padding: 0;
+    list-style: none;
+}
+
+.hotel-adv li {
+    margin: 1rem;
+    margin-left: 0;
+}
+
+.hotel-adv .room {
+    margin-bottom: 10rem;
+}
+
+.hotel-img img {
+    width: 100%;
+    border-radius: 2%;
+}
+
+.hotel-price {
+    position: absolute;
+    right: 0;
+    top: 0rem;
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    color: #E56868;
+}
+
+.hotel-price > div {
+    width: 30%%;
+    height: 25%;
+    padding: 0rem 2rem;
+    position: relative;
+    border-bottom: solid;
+}
+
+.hotel-price div .price-value {
+    position: absolute;
+    right: 2rem;
+    bottom: 0;
+}
+
+.hotel-price button {
+    float: right;
+    margin-top: 2rem;
+    margin-right: 2rem;
 }
 
 footer {

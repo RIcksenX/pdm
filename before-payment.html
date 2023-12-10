@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>KONOHA.COM</h1>
+        <h5>Best Assistance for your travels</h5>
+        <div class="header">
+            <div class="left-header">
+                <a href="" class="this-page">Home</a>
+                <a href="">My Booking</a>
+            </div>
+            <div class="right-header">
+                <a href="./register.html">Sign Up</a>
+                <a href="./login.html">Log In</a>
+            </div>
+        </div>
+    </header>
+
+    <h1 class="title-page">Payment</h1>
+    <div class="content">
+        <div class="hotel-detail">
+            <div class="upside-detail">
+                <div class="date-type">
+                    <label for="from-date">From</label>
+                    <input type="date" name= "date" id="from-date">
+                    <label for="to-date">To</label>
+                    <input type="date" name="date" id="to-date">
+                    <label for="room-type">Room Type</label>
+                    <select name="type" id="room-type">
+                        <option value="-" disabled selected>Select Type</option>
+                        <option value="Single Room">Single Room</option>
+                        <option value="Twin Room">Twin Room</option>
+                        <option value="Deluxe">Deluxe</option>
+                        <option value="Family">Family</option>
+                    </select>
+                </div>
+                <div class="hotel-preview">
+                    <img src="desain-kamar-hotel-mewah-0.jpg" alt="Hotel">
+                </div>
+                <div class="hotel-info">
+                    <div>
+                        <h2>Hotel Details</h2>
+                        <h5 id="map">Jl. Kencana No. 18</h5>
+                        <img id="hotel-preview" src="copy - vecteezy_examen-de-la-notation-5-etoiles-etoile-png-transparent_9663928.png" alt="Rating">
+                        <h5>Review (50)</h5>
+                        <textarea placeholder='Enter review...' maxlength='1000' id="review-box"></textarea>
+                        <button id="send-review"><i class="material-icons">send</i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="downside-detail">
+                <div class="invoice">
+                    <table>
+                        <tr>
+                            <td>Price</td>
+                            <td id="room-price">-</td>
+                        </tr>
+                        <tr>
+                            <td>Total Days</td>
+                            <td id="totalDays">-</td>
+                        </tr>
+                        <tr>
+                            <td>Tax</td>
+                            <td>10%</td>
+                        </tr>
+                        <tr class="sub-total">
+                            <td>Sub Total</td>
+                            <td id="sub-total">-</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="payment-gateway">
+                    <div>
+                        <h3>Payment By:</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <a href="https://twitter.com/LouisRi35280470" target="_blank" rel="noopener noreferrer"><img src="twitter-removebg-preview.png" alt="Twitter" class="socialmedia"></a>
+            <a href="https://www.facebook.com/profile.php?id=100010343614809" target="_blank" rel="noopener noreferrer"><img src="facebook.png" alt="Facebook" class="socialmedia"></a>
+            <a href="https://www.instagram.com/louisricardo6720/" target="_blank" rel="noopener noreferrer"><img src="instagram-removebg-preview.png" alt="Instagram" class="socialmedia"></a>
+        </div>
+        <div>Copyright @ 2023 Kelompok 10. All Rights Reserved</div>
+    </footer>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
